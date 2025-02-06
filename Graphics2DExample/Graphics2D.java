@@ -1,5 +1,4 @@
 package Graphics2DExample;
-import Graphics2DExample.MainPanel;
 import javax.swing.JFrame;
 
 public class Graphics2D extends JFrame{
