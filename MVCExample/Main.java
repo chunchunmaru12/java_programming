@@ -1,6 +1,6 @@
 package MVCExample;
 
-import controller.ProductController;
+import MVCExample.controller.ProductController;
 import MVCExample.view.AddProductView;
 
 public class Main {
