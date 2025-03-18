@@ -1,3 +1,4 @@
+package JavaBeans;
 import java.io.Serializable;
 
 public class CustomerBeans implements Serializable {
@@ -8,6 +9,10 @@ public class CustomerBeans implements Serializable {
     private String contact;
     private String gender;
 
+    // Constructor
+    public CustomerBeans() {}
+
+    // Getters and Setters
     public String getFull_name() {
         return full_name;
     }
@@ -32,19 +37,17 @@ public class CustomerBeans implements Serializable {
     public void setContact(String contact) {
         this.contact = contact;
     }
-    
     public String getGender() {
-        return this.gender;
+        return gender;
     }
-    public void setGender(String gender){
-        this.gender=gender;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public CustomerBeans() {}
+    // Fixed toString() Method
     @Override
     public String toString() {
-        return "CustomerBeans [full_name=" + full_name + ", id=" + id + ", email=" + email + ", contact=" + contact
-                + ",";
+        return "CustomerBeans [full_name=" + full_name + ", id=" + id + ", email=" + email + 
+               ", contact=" + contact + ", gender=" + gender + "]";
     }
-
 }
