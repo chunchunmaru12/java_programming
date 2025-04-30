@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <servlet>
+        <server-name>first</server-name>
+        <servlet-class>com.dav.edu.servletdemo.example.FirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>first</servlet-name>
+        <servlet-url>/first</servlet-url>
+    </servlet-mapping>
+    <servlet>
+        <server-name>generic</server-name>
+        <servlet-class>com.dav.edu.servletdemo.example.GenericServletExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>generic</servlet-name>
+        <servlet-url>/generic</servlet-url>
+    </servlet-mapping>
+</web-app>

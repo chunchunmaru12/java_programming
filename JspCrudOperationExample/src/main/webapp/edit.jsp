@@ -10,7 +10,7 @@
 </head>
 <body class="bg-light">
 <div class="container py-5">
-    <h2 class="mb-4 text-center">✏️ Edit Task</h2>
+    <h2 class="mb-4 text-center">Edit Task</h2>
     <form action="UpdateTaskServlet" method="post" class="bg-white p-4 rounded shadow-sm">
         <input type="hidden" name="id" value="<%= request.getAttribute("id") %>">
 
@@ -45,7 +45,7 @@
         </div>
 
         <div class="d-flex justify-content-between">
-            <a href="ToDoListServlet" class="btn btn-secondary">← Back</a>
+            <a href="ToDoListServlet" class="btn btn-secondary"> Back</a>
             <button type="submit" class="btn btn-primary">Update Task</button>
         </div>
     </form>
